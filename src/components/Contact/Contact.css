@@ -1,0 +1,380 @@
+/* General Styles */
+#contact {
+  overflow: hidden;
+  width: 100%;
+  height: auto; /* Fix height to auto instead of 100vh */
+}
+
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact__image {
+  position: relative;
+  width: 100%;
+}
+
+.contact__background-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.contact__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.contact__overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color:greenyellow;
+  font-weight: bold;
+}
+
+.contact__overlay h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: white;
+}
+
+.contact__reach-out-text {
+  font-size: 24px;
+  margin-top: 22px;
+  
+}
+
+/* Map Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact__map {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.contact__map-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+/* Office Location Styles */
+.contact__locations {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__location-item {
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #f7f7f7);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.contact__location-item:hover,
+.contact__location-item.active {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-color: #aaa;
+}
+
+.contact__location-item h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contact__location-item p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Contact Form Styles */
+.contact__form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.contact__form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.contact__form .title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact__form .text__muted {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+}
+
+.contact__image-wrapper {
+  flex: 1;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.contact__side-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-left: 1px solid #ddd;
+}
+
+.contact__form .row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact__form .control {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  background: #f9f9f9;
+  color: #555;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact__form .control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact__form input {
+  height: 50px;
+}
+
+/* Container for button */
+.contact_form_bottom {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  margin-top: 20px;
+}
+
+/* Send Now Button */
+.btn__primary {
+  background-color: #006400;  /* Dark Green */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* Hover effect */
+.btn__primary:hover {
+  background-color: #004d00; /* Slightly darker green */
+}
+
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.status-message {
+  font-weight: bold;
+  color: rgb(180, 0, 0);
+  font-size: 18px;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.error-status {
+  color: red;
+}
+
+/* Contact Options Styles */
+.contact__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.contact__options .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__options .option:hover {
+  transform: scale(0.98);
+}
+
+.contact__options .icon__container {
+  width: auto;
+  height: auto;
+  font-size: 1.5rem;
+  background: var(--color-ui-primary);
+  border-radius: none;
+}
+
+.contact__options .name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.contact__options .text__muted {
+  font-size: 16px;
+  margin-top: 3px;
+  color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  #contact .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #contact .contact__form {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .contact__options {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__locations {
+    padding: 0 15px;
+  }
+
+  .contact__location-item {
+    padding: 15px;
+  }
+
+  .contact__form-container {
+    margin-top: 30px;
+  }
+
+  .contact__form .title {
+    font-size: 28px;
+  }
+
+  .contact__form .text__muted {
+    font-size: 16px;
+  }
+
+  .btn__primary {
+    padding: 8px 16px;
+  }
+
+  .contact__options {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .contact__options .option {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact__form-wrapper {
+    flex-direction: column;
+  }
+
+  .contact__side-image {
+    display: block; /* Make the side image visible */
+    width: 100%; /* Make sure the image takes the full container width */
+    height: 200px; /* You can adjust the height as needed */
+    object-fit: cover; /* Ensure the image scales properly */
+  }/* Hide the side image on small screens */
+  
+
+  .contact__form .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact__options {
+    gap: 30px;
+  }
+}
+

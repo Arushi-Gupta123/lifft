@@ -1,0 +1,58 @@
+.applications-section {
+    padding-top: 80px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 65px;
+    color:  #62b114;
+    font-weight: bold;
+  }
+  
+  .applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .application-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .application-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .application-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .application-info {
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .application-title {
+    font-size: 1.5rem;
+    color: #006400;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .application-description {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,202 @@
+/* Footer Container */
+.custom-footer {
+  background-color:white; /* Light grey background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+
+/* Logo Section */
+.footer-logo-section {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align content */
+  text-align: center;
+}
+
+.footer-logo {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 10px; /* Space between logo and text */
+}
+.text-light-green {
+  color: #7ad81b; /* Example light green color */
+}
+
+.text-dark-green {
+  color: #006400; /* Example dark green color */
+}
+
+/* Icons Section (Horizontal with Green Background) */
+.footer-icons-horizontal {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.footer-icons-horizontal a:hover{
+  color:rgb(29, 229, 29);
+}
+
+.icon-circle, .social-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black; /* Black background */
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: white; /* White icons */
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.icon-circle:hover, .social-icon:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Navigation Links */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  font-size: 1.2rem;
+  color: darkgreen;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-link:hover {
+  color: darkgreen; /* Optional hover effect */
+}
+
+/* Bottom Section */
+.footer-bottom {
+  font-size: 1rem;
+  color: black; /* Text color for footer bottom */
+  margin-top: 2rem;
+}
+
+/* Footer links for smaller screens */
+footer-links-below {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer-links-below:hover {
+  color:#006400;
+}
+
+.footer-link-small {
+  color: black;
+  font-size: 0.875rem; /* Smaller font size */
+  text-decoration: none;
+}
+
+.footer-link-small:hover {
+  color: darkgreen;
+}
+
+.divider {
+  color: black;
+  font-size: 0.875rem;
+  margin: 0 10px;
+}
+
+/* Tilted upward arrow styling */
+.arrow {
+  display: inline-block;
+  transform: rotate(45deg); /* Rotates the arrow upwards */
+  font-size: 1em; /* Adjust size to match the arrow */
+  margin-left: 0;
+}
+
+/* Horizontal nav links style */
+.footer-nav-horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.footer-links-below a {
+  color: black;  /* Default text color */
+  text-decoration: none; /* Removes underline */
+  font-size: 16px; /* Adjust size as needed */
+  transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.footer-links-below a:hover {
+  color: rgb(1, 135, 1); /* Dark green on hover */
+}
+/* Mobile and tablet responsiveness */
+
+@media (max-width: 800px) {
+  /* Stack footer content vertically */
+  .footer-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-icons-horizontal {
+      flex-direction: row;
+      gap: 1rem; /* Adjust icon spacing */
+  }
+
+  .footer-logo-section {
+      font-size: 1.5rem; /* Slightly smaller logo text */
+  }
+
+  .footer-nav-horizontal {
+      flex-direction: column; /* Stack links vertically for smaller screens */
+      gap: 30px;
+  }
+
+  .footer-link {
+      font-size: 1.2rem; /* Smaller font size */
+      text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Further adjust for very small screens */
+  .custom-footer {
+      padding: 1rem; /* Reduced padding */
+  }
+
+  .footer-logo-section {
+      font-size: 1rem;
+  }
+
+  .footer-nav, .footer-icons-horizontal {
+      flex-direction: row;
+  }
+
+  .footer-link {
+      font-size: 1rem; /* Decrease font size further */
+      margin: 5px 0;
+  }
+
+  .footer-bottom {
+      font-size: 0.9rem; /* Slightly smaller footer text */
+  }
+
+  .footer-link-small {
+      font-size: 0.75rem; /* Smaller link size for small screens */
+  }
+}

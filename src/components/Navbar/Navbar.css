@@ -1,0 +1,29 @@
+.text-light-green {
+    color: #7ad81b; /* Example light green color */
+  }
+  
+  .text-dark-green {
+    color: #006400; /* Example dark green color */
+  }
+  
+  /* Ensure there's no overlap */
+html {
+  scroll-padding-top: 80px; /* Adjust the value to match your header height */
+}
+
+/* For extra padding around sections */
+section {
+  padding-top: 90px; /* Adjust accordingly */
+}
+
+/* Navbar.css */
+
+/* Sticky Navbar */
+header {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Menu Animation */
+.transform {
+  transition: transform 0.3s ease-in-out;
+}

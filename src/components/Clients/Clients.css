@@ -1,0 +1,152 @@
+/* Container styling */
+.clients-container {
+    padding-top: 80px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color:#f7f7f7;
+    text-align: center;
+    height: auto; /* Ensure content height adjusts properly */
+    padding-bottom: 50px; /* Prevent footer overlap */
+  }
+  
+  /* Title styling */
+  .clients-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #62b114;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  
+  /* Client list styling */
+  .clients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Hover effect */
+  .clients-item:hover {
+    color: darkgreen;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+  
+  /* Individual client item styling */
+  .clients-item {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #495057;
+    transition: color 0.3s ease;
+    text-align: center;
+  }
+  
+  .clients-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Name and company differentiation */
+  .client-name {
+    font-weight: bold;
+  }
+  
+  .client-company {
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Clients table layout */
+  .clients-table {
+    display: flex;
+    justify-content: space-between; /* Space items between columns */
+    gap: 60px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  /* Columns for clients and companies */
+  .clients-column,
+  .companies-column {
+    width: 45%; /* Use 45% width to allow two columns side by side */
+    text-align: center;
+  }
+  
+  /* Clients and companies section headers */
+  .clients-column h3,
+  .companies-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid darkgreen;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  
+  /* Client data row styling */
+  .client-row {
+    font-size: 1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    /* Title font-size adjustment */
+    .clients-title {
+      font-size: 2rem;
+    }
+  
+    /* Ensure clients-table keeps columns side-by-side but adjusts */
+    .clients-table {
+      flex-direction: row;
+      gap: 30px;
+    }
+  
+    /* Adjust column widths for medium screens */
+    .clients-column,
+    .companies-column {
+      width: 48%; /* Decrease width to fit columns beside each other */
+    }
+  
+    .clients-column h3,
+    .companies-column h3 {
+      font-size: 1.5rem;
+    }
+  
+    /* Smaller row font for medium screens */
+    .client-row {
+      font-size: 1rem;
+      padding: 6px 0;
+    }
+  }
+  
+  /* For mobile devices (extra small screens) */
+  @media (max-width: 480px) {
+    /* Title font-size for smaller screens */
+    .clients-title {
+      font-size: 1.8rem;
+    }
+  
+    /* Stack columns in a more mobile-friendly way */
+    .clients-table {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    /* Ensure full width on mobile */
+    .clients-column,
+    .companies-column {
+      width: 100%; /* Full width for mobile */
+    }
+  
+    /* Smaller client row font */
+    .client-row {
+      font-size: 0.9rem;
+      padding: 4px 0;
+    }
+  }
+  

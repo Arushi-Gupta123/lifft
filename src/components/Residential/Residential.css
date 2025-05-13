@@ -1,0 +1,34 @@
+/* Container for the detail page */
+.application-detail {
+    padding: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+.application-detail-image {
+    width: 4000px;/* Make the image span the full width of the container */
+    height:450px;
+    display: block; /* Ensures the image behaves as a block-level element */
+  }
+  
+  
+  /* Bold and colorful title for the detail page */
+  .application-detail-title {
+    font-size: 2.5rem;  /* Make the title big */
+    font-weight: bold;
+    color:darkgreen;     /* Choose a vibrant color for the title */
+    margin-top: 20px;
+    text-transform: uppercase;  /* Optional: makes the title in uppercase */
+    letter-spacing: 2px;  
+text-align: center; 
+ }
+  
+  /* Style for the paragraph under the title */
+  .application-detail-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 0 10px;
+    color: #333;     /* Make the paragraph text dark for better readability */
+  }
+  

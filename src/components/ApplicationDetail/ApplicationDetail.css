@@ -1,0 +1,69 @@
+.application-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style for detail page */
+.application-detail {
+  text-align: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* Center and style the image */
+.application-detail-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  margin: 0 auto 30px auto; /* Center the image and add margin to the bottom */
+  display: block;   /* Ensures image is a block element for centering */
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+/* Bold and colorful title for the detail page */
+.application-detail-title {
+  font-size: 2.5rem;  /* Make the title big */
+  font-weight: bold;
+  color: #FF5733;     /* Choose a vibrant color for the title */
+  margin-top: 20px;
+  text-transform: uppercase;  /* Optional: makes the title in uppercase */
+  letter-spacing: 2px;       /* Adds some space between letters for impact */
+}
+
+/* Style for the paragraph under the title */
+.application-detail-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  padding: 0 10px;
+  color: #333;     /* Make the paragraph text dark for better readability */
+  font-family: Arial, sans-serif; /* Optional: changes the font family */
+}
+
+
+  .application-details-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .application-details-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  

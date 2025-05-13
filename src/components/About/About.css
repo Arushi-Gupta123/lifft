@@ -1,0 +1,130 @@
+#about {
+  background-color: #f7f7f7;
+
+    padding: 60px 20px;
+  }
+  
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .about__photo img {
+    width: 2500px;
+    height: auto;
+    object-fit: cover;
+    
+  }
+  
+  .about__content {
+    text-align: left;
+  }
+  
+  .about__title {
+    font-size: 4rem;
+    color: #62b114;
+    margin-top: -35px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .about__description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #222;
+  }
+  
+  .feature svg {
+    color: #006400;;
+    font-size: 1.5rem;
+  }
+  
+  .values__section {
+    background: #ffffff;
+    padding: 60px 20px;
+    margin-top: 40px;
+  }
+  
+  .section__title {
+    font-size: 3rem;
+    color: #62b114;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .values__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .values__box {
+    background: #f7f9fc;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .values__box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .values__box img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .values__box h3 {
+    font-size: 1.2rem;
+    color: #006400;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .values__box p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 900px) {
+    .about__container {
+      grid-template-columns: 1fr;
+    }
+  
+    .values__container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .values__container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

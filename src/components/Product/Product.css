@@ -1,0 +1,159 @@
+/* General Layout */
+.product-page {
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+
+}
+
+.product-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  #62b114;
+}
+
+.product-subtitle {
+    color: #4a4a4a;
+    font-size: 1.125rem;
+}
+
+/* Product Selection */
+.model-selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top:-65px;
+}
+
+.model-button {
+    background-color: #268328;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.model-button.active {
+    background-color: #1e6a2c;
+    font-weight: bold;
+}
+
+.model-button:hover {
+    background-color: #1e6a2c;
+}
+
+/* Product Display */
+.product-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);       
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #268328;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.product-features {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.product-features li {
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.product-features li:before {
+    content: "✔";
+    color: #268328;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 1.125rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button Hover Effects */
+.view-more-button {
+    background-color: #268328;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+    background-color: #1e6a2c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-display {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+
+    .product-info {
+        max-width: 100%;
+    }
+
+    .model-selection {
+        flex-wrap: wrap;
+    }
+}
+
+/* Additional Styling for Accessibility */
+.model-button:focus,
+.view-more-button:focus {
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
+}

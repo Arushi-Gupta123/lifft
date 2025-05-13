@@ -1,0 +1,174 @@
+/* Container styles */
+.sitemap-container {
+    position: relative;
+    text-align: center;
+    width: 100%; /* Ensure the container takes up full width */
+    height: 200px;/* Allow it to expand based on the content */
+   padding-bottom:800px;
+
+  }
+  
+  /* Ensure the background image properly fits */
+  .sitemap-image {
+    width: 2500px;
+    height: 400px; /* Make the height auto-adjust */
+    /* Ensure the image covers the entire width and height */
+    /* Ensure the image stays behind other content */
+  }
+  .sitemap-text {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem; /* Adjust font size */
+    font-weight: bold;
+    color: white;
+    z-index: 2; /* Ensure text is on top of the image */
+    text-align: center;
+    margin-top:-130px;
+  }
+  
+  
+  /* Overlay container */
+  .sitemap-overlay {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px; /* Space below the header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1200px;
+    z-index: 3; /* Layer above the image */
+  }
+  
+  .sitemap-header {
+    position: absolute; /* Position it on top of the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    z-index: 3; /* Ensure it's above the image */
+  }
+  
+  .sitemap-header h1 {
+    font-size: 3rem; /* Make the text larger */
+    color: #fff; /* White text for visibility */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+    text-align: center;
+    margin: 0; /* Remove default margins */
+  }
+  
+  
+  /* Columns container */
+  .sitemap-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive layout */
+    margin-top: 20px;
+  }
+  .contact-column {
+    flex: 1 1 20%; /* Same width as other columns */
+  }
+  
+  .sitemap-column {
+   
+    flex: 1 1 30%; /* Flexible columns */
+    margin: 10px;
+    min-width: 250px;
+  }
+  
+  .sitemap-column h3 {
+    font-size: 1.5rem;
+    color:darkgreen;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  
+/* General styling for list items */
+.sitemap-column ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+  }
+  
+  .sitemap-column li {
+    margin: 10px 0;
+    position: relative; /* Positioning for icons if needed */
+  }
+  
+  /* Styling for sub-items */
+  .sitemap-column li ul {
+    margin-left: 10px; /* Indent the sub-items */
+    padding-left: 10px; /* Extra spacing */
+    border-left: 2px solid #ccc; /* Optional: Add a vertical line for visual separation */
+  }
+  
+  .sitemap-column li ul li {
+    display: flex;
+    align-items: center; /* Align text and arrow icon */
+  }
+  
+  .sitemap-column li ul li:before {
+    content: "➤"; /* Add a right-arrow icon before sub-items */
+    margin-right: 8px; /* Space between the icon and text */
+    font-size: 0.9rem; /* Slightly smaller arrow size */
+    color:green; /* Arrow color */
+  }
+  
+  
+  .sitemap-column li a {
+    text-decoration: none;
+    color: green;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .sitemap-column li a:hover {
+    color: darkgreen;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .sitemap-columns {
+      flex-direction: column; /* Stack columns on small screens */
+      align-items: center;
+    }
+  
+    .sitemap-column {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Responsive styles */
+@media screen and (max-width: 768px) {
+    .sitemap-columns {
+      flex-direction: column; /* Stack columns on small screens */
+      align-items: center;
+    }
+  
+    .sitemap-column {
+      margin-bottom: 20px; /* Add space between stacked columns */
+    }
+  
+    .sitemap-text {
+      font-size: 2rem; /* Smaller text for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sitemap-text {
+      font-size: 1.5rem; /* Further reduce text size on very small screens */
+    }
+  
+    .sitemap-column h3 {
+      font-size: 1.2rem; /* Adjust header size */
+    }
+  
+    .sitemap-column li a {
+      font-size: 0.9rem; /* Adjust link font size */
+    }
+  }
+  
+  

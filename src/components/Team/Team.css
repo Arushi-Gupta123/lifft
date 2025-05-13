@@ -1,0 +1,130 @@
+#team {
+    padding-top: 90px;
+    text-align: center;
+
+}
+
+/* Title Styling */
+#team .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #62b114;
+}
+
+/* Subtitle Styling */
+#team .sub__title {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 50px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+
+/* Teams Container */
+.teams__container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 40px; /* Space between each team member */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Team Card */
+.team__card {
+    display:flex;
+    margin-right:20px;  
+    background:none;
+    padding: none;
+    border-radius: none;
+    box-shadow: none;
+    text-align: center; /* Center align all text and content */
+    width: 400px; /* Fixed width for consistent appearance */
+    transition: transform 0.3s ease;
+}
+
+.team__card:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Image Styling */
+.profile__container {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the image horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__container img {
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Details Section */
+.details {
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.text__muted {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.social__container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight:bold;
+    margin-left:20px;
+}
+
+.icon__container {
+    color: #333;
+    transition: color 0.3s ease;
+    font-weight:bold;
+}
+
+.icon__container:hover {
+    color: #62b114; /* Change to accent color */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .team__card {
+        width: 100%; /* Full-width cards on smaller screens */
+    }
+
+    .profile__container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 1.25rem;
+    }
+
+    .text__muted {
+        font-size: 0.9rem;
+    }
+
+    .social__container {
+        gap: 10px;
+        font-size: 1.2rem;
+    }
+}
