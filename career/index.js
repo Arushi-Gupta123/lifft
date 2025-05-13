@@ -1,7 +1,8 @@
 const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
-const mysql = require("mysql2");
+// ✅ Use mysql2 instead
+const mysql = require('mysql2');
 const path = require("path");
 
 const app = express();

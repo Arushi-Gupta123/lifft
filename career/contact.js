@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+// ✅ Use mysql2 instead
 const mysql = require('mysql2');
 
 const bodyParser = require("body-parser");
